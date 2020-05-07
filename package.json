@@ -2,7 +2,7 @@
   "name": "expansion-db",
   "version": "1.0.0",
   "description": "Database interface for Expansion One",
-  "main": "index.js",
+  "main": "src/app/index.js",
   "scripts": {
     "start": "electron ."
   },
@@ -11,5 +11,7 @@
   "devDependencies": {
     "electron": "^8.2.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.2-hotfix62"
+  }
 }

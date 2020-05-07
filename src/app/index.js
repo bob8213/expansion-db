@@ -6,6 +6,7 @@ const createWindow = () => {
     width: 1280,
     height: 720,
     show: false,
+    frame: false,
     webPreferences: {
       nodeIntegration: true,
     }

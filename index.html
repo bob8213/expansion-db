@@ -2,21 +2,59 @@
 <html lang="en">
 <head>
   <title>ExpansionDb</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <div class="content">
-    <div class="split categories"></div>
-    <div class="split inspector-panel"></div>
+    <div class="split categories">
+      <h1 class="panel-title">Catégories</h1>
+    </div>
+    <div class="split inspector-content">
+      <div class="split inspector-panel">
+        <h1 class="panel-title">Inspecteur</h1>
+      </div>
+      <div class="split console">
+        <h1 class="panel-title">Console</h1>
+        <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+        <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+        <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+      </div>
+    </div>
     <div class="split secondary-content">
-      <div class="split history"></div>
-      <div class="split query"></div>
+      <div class="split history">
+        <h1 class="panel-title">Historique</h1>
+        <div>Sed ut perspiciatis unde</div>
+        <div>Sed ut perspiciatis unde</div>
+        <div>Sed ut perspiciatis unde</div>
+        <div>Sed ut perspiciatis unde</div>
+        <div>Sed ut perspiciatis unde</div>
+      </div>
+      <div class="split query">
+        <h1 class="panel-title">Recherche</h1>
+        <div>natus error sit voluptatem</div>
+        <div>natus error sit voluptatem</div>
+        <div>natus error sit voluptatem</div>
+        <div>natus error sit voluptatem</div>
+        <div>natus error sit voluptatem</div>
+      </div>
     </div>
   </div>
 
-  <script src="render.js"></script>
+  <div class="status-bar">
+    BDD connectée
+  </div>
+
+  <script src="src/renderer/config.js"></script>
+  <script src="src/renderer/utils.js"></script>
+
+  <script src="src/renderer/state.js"></script>
+
+  <script src="src/renderer/load.js"></script>
+  <script src="src/renderer/resize.js"></script>
+
+  <script src="src/renderer/test.js"></script>
 
 </body>
 </html>
