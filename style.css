@@ -14,6 +14,8 @@ body {
   background: #24292E;
   color: #a8abad;
   user-select: none;
+  font-size: 14px;
+  font-family: "Open Sans";
 }
 
 .hidden {
@@ -29,14 +31,14 @@ body {
   height: 100%;
   border-top: 1px solid black;
   border-right: 1px solid black;
-  padding: 5px;
+  /* padding: .5em; */
 }
 
 .categories {
   width:20%;
 }
 
-.inspector {
+.inspector-panel {
   width:60%;
 }
 
@@ -55,9 +57,21 @@ body {
 }
 
 .category-name {
-  padding: .25em 0 .25em 0;
+  padding: .25em 0 .25em .5em;
 }
 
-.category-name:hover {
+.category-name:hover ,.selected {
   background: #185282;
+  color: white;
+}
+
+.inspector-panel h1 {
+  margin: .8em 0 1.2em 0;
+  border-bottom: 2px solid #a8abad;
+  font-size: 24px;
+}
+
+.inspector {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
