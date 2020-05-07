@@ -1,0 +1,15 @@
+{
+  "categories": [
+    "classe",
+    "commande",
+    "compte",
+    "creature",
+    "event",
+    "faction",
+    "item",
+    "pattern",
+    "personnage",
+    "quete",
+    "sort"
+  ]
+}
