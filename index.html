@@ -17,9 +17,22 @@
       </div>
       <div class="split console">
         <h1 class="panel-title">Console</h1>
-        <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
-        <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
-        <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+        <div class="console-content">
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line console-ok">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line console-err">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line console-ok">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line console-ok">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line console-ok">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+          <div class="console-line">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</div>
+        </div>
       </div>
     </div>
     <div class="split secondary-content">
@@ -43,18 +56,21 @@
   </div>
 
   <div class="status-bar">
-    BDD connectée
+    <span class="status-ok">•</span>
+    <span class="status-msg">BDD connectée</span>
   </div>
 
-  <script src="src/renderer/config.js"></script>
-  <script src="src/renderer/utils.js"></script>
+  <script src="src/render/config.js"></script>
+  <script src="src/render/utils.js"></script>
 
-  <script src="src/renderer/state.js"></script>
+  <script src="src/render/state.js"></script>
 
-  <script src="src/renderer/load.js"></script>
-  <script src="src/renderer/resize.js"></script>
+  <script src="src/render/load.js"></script>
+  <script src="src/render/resize.js"></script>
 
-  <script src="src/renderer/test.js"></script>
+  <script src="src/render/console.js"></script>
+
+  <script src="src/render/test.js"></script>
 
 </body>
 </html>

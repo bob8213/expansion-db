@@ -1,6 +1,6 @@
 
 ((global) => {
-  var Config = (() => {
+  let Config = (() => {
     const config = require('./config/config.json');
     return config;
   })();

@@ -1,3 +1,4 @@
 {
-  "splitBorderHandle": 15 
+  "splitBorderHandle": 15,
+  "wheelSpeed": 0.4
 }

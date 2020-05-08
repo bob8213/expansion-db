@@ -8,6 +8,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
+    font-family: "Open Sans";
 }
 
 body {
@@ -15,7 +16,15 @@ body {
   color: #a8abad;
   user-select: none;
   font-size: 14px;
-  font-family: "Open Sans";
+}
+
+#fullscreen {
+  width:      100%;
+  height:     100%;
+  z-index:    -10;
+  top:        0;
+  left:       0;
+  position:   fixed;
 }
 
 .hidden {
@@ -23,21 +32,14 @@ body {
 }
 
 .content {
-  height: 98%;
+  height: 97.5%;
   display: flex;
-}
-
-.status-bar {
-  height: 2%;
-  margin: 0;
-  font-size: 12px;
-  background: #202428;
 }
 
 .split {
   height: 100%;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+  /* border-top: 1px solid #202428; */
+  border-right: 1px solid #202428;
 }
 
 .panel-title {
@@ -45,6 +47,7 @@ body {
   margin: 0;
   padding: .5em;
   font-size: 14px;
+  text-shadow: 2px 2px 4px #FFFFFF22;
 }
 
 .categories {
@@ -62,6 +65,7 @@ body {
 
 .console {
   height: 20%;
+  overflow: hidden;
 }
 
 .secondary-content {
@@ -106,4 +110,60 @@ body {
 .category-name:hover ,.selected {
   background: #185282;
   color: white;
+}
+
+.status-bar {
+  display: table;
+  height: 2.5%;
+  width: 100%;
+  margin: 0;
+  padding: 0 1em 0 1em;
+  font-size: 12px;
+  background: #202428;
+}
+
+.status-ok, .status-err {
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: white 1px 1px 6px;
+  position:   fixed;
+}
+
+.status-ok {
+  color: #99ff99;
+}
+
+.status-err {
+  color: #ff9999;
+}
+
+.status-msg {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 2em;
+}
+
+.console-content {
+  position: relative;
+  bottom: 0;
+  z-index: -10;
+  padding: .5em .3em .5em .3em;
+  font-size: 13px;
+}
+
+.console-line {
+  padding: .25em;
+  color: #7a858e;
+}
+
+.console-line:hover {
+  background: #282d33;
+}
+
+.console-ok {
+  color: #5ca55c;
+}
+
+.console-err {
+  color: #d13a3a;
 }

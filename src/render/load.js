@@ -1,7 +1,7 @@
 
 // Load the static contents into the app
 ((global) => {
-  var StaticContent = (() => {
+  let StaticContent = (() => {
     const fs = require('fs')
     const categoryNames = require('./config/categories.json').categories;
     const inspectorContents = categoryNames.map(name =>
